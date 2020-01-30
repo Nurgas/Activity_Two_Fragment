@@ -13,10 +13,11 @@ import java.util.ArrayList;
 
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
-    ArrayList<Task> mTask;
+    ArrayList<String> data;
 
     public MyAdapter() {
-        mTask = new ArrayList<>();
+       this.data = new ArrayList<>();
+
     }
     @NonNull
     @Override
@@ -29,17 +30,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.onBind(mTask.get(position));
+        holder.onBind(data.get(position));
 
 
     }
 
     @Override
     public int getItemCount() {
-        return mTask.size();
+        return data.size();
     }
-    public void addTask(Task task) {
-        mTask.add(task);
+    public void addTask(String text) {
+        data.add(text);
         notifyDataSetChanged();
 
     }

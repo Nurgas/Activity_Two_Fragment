@@ -43,8 +43,9 @@ public class FirstFragment extends Fragment {
             });
             return view;
     }
-    public void addTask(Task task) {
-        mMyAdapter.addTask(task);
+
+    public void addTask(String text) {
+        mMyAdapter.addTask(text);
 
     }
 

@@ -9,9 +9,6 @@
         android:id="@+id/holderTitle"
         android:layout_width="match_parent"
         android:layout_height="30dp" />
-    <TextView
-        android:id="@+id/holderDesc"
-        android:layout_width="match_parent"
-        android:layout_height="30dp" />
+
 
 </LinearLayout>

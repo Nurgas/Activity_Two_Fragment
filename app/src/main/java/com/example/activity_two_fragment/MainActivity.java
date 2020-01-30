@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity implements FirstFragmentList
 
 
     @Override
-    public void openFirstFragment(Task task) {
+    public void openFirstFragment(String text) {
         manager.beginTransaction().hide(secondFragment).commit();
         manager.beginTransaction().show(firstFragment).commit();
 
-        firstFragment.addTask(task);
+        firstFragment.addTask(text);
 
     }
 
