@@ -6,18 +6,15 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 
 public class FirstFragment extends Fragment {
 
     Button addButton;
-    TextView tv;
     RecyclerView recyclerView;
     MyAdapter mMyAdapter;
     FirstFragmentListener firstFragmentListener;
@@ -33,7 +30,6 @@ public class FirstFragment extends Fragment {
                              Bundle savedInstanceState) {
             View view = inflater.inflate(R.layout.fragment_first, container, false);
             recyclerView = view.findViewById(R.id.recyclerView);
-            tv = view.findViewById(R.id.first_frag_text);
             addButton = view.findViewById(R.id.addBtn);
             RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext());
             recyclerView.setLayoutManager(manager);
@@ -49,9 +45,7 @@ public class FirstFragment extends Fragment {
     }
     public void addTask(Task task) {
         mMyAdapter.addTask(task);
-        tv.setText(task.title);
-        Log.e("ololo", "Task title "+ task.title);
-        Log.e("ololo", "Task title "+ tv.getText().toString());
+
     }
 
 }

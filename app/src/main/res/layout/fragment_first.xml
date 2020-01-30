@@ -16,15 +16,6 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <TextView
-        android:id="@+id/first_frag_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/addBtn"
-        android:background="@color/colorAccent"
-        android:textSize="40sp">
-
-    </TextView>
 
     <Button
         android:id="@+id/addBtn"

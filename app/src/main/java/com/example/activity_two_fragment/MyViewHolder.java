@@ -1,6 +1,5 @@
 package com.example.activity_two_fragment;
 
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -25,7 +24,6 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
         this.mTask = task;
         titleView.setText(task.title);
         descView.setText(task.description);
-//        Log.e("ololo", "Task" + task.title);
 
 
 

@@ -23,14 +23,9 @@ public class SecondFragment extends Fragment {
     public static SecondFragment create(SecondFragmentListener listener){
         SecondFragment secondFragment = new SecondFragment();
         secondFragment.listener = listener;
-
         return secondFragment;
 
     }
-
-
-        // Required empty public constructor
-
 
 
     @Override
